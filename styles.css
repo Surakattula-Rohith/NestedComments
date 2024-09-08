@@ -1,0 +1,129 @@
+/* General styling for the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Card that wraps each comment or reply */
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Header section containing the comment text and timestamp */
+  .comment-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* The comment text */
+  .text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    word-wrap: break-word;
+    margin-top: 5px;
+  }
+  
+  /* Timestamp on the left side */
+  .timestamp {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for reply, edit, delete buttons */
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .reply,
+  .edit,
+  .delete {
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reply:hover,
+  .edit:hover,
+  .delete:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete {
+    background-color: #ff5252;
+  }
+  
+  .delete:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Input and button for adding replies or editing */
+  .input {
+    width: calc(100% - 80px);
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Reply box container */
+  .comment-reply-container {
+    margin-top: 10px;
+  }
+  
+  /* Nested comments/replies styling */
+  .comment:not(:first-child) {
+    margin-left: 30px;
+    border-left: 2px solid #bbb;
+    padding-left: 15px;
+  }
+  
+  /* Additional margin for cleaner look */
+  .comment {
+    margin-top: 10px;
+  }
+  
+  /* Update button for editing comments */
+  .update-btn {
+    background-color: #28a745;
+  }
+  
+  .update-btn:hover {
+    background-color: #218838;
+  }
+  
